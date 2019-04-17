@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Rift Map v2</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="css/simple-sidebar.css" rel="stylesheet">
+  
+  <!-- Custom CSS -->
+  <link href="css/npc-custom.css" rel="stylesheet">
+  
+  <!-- Minecraft Overviewer Custom Scripts -->
+  <script type="text/javascript" src="overviewerConfig.js"></script>
+  <script type="text/javascript" src="overviewer.js"></script>
+  <script type="text/javascript" src="baseMarkers.js"></script>
+
+  <link rel="stylesheet" href="leaflet.css" />
+  <script src="leaflet.js"></script>
+  <link rel="stylesheet" href="overviewer.css" type="text/css" />
+  
+  <!-- Favicon Script -->
+  <link rel="shortcut icon" type="image/png" href="/favicon.png"/>
+  <link rel="shortcut icon" type="image/png" href="http://tomtamaira.com/riftmap/favicon.png"/>
+  
+  <!-- FontAwesome v5.8.1 -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+
+</head>
+
+<body>
+
+  <div class="d-flex" id="wrapper">
+
+    <!-- Sidebar -->
+    <div class="bg-light border-right" id="sidebar-wrapper">
+      <div class="sidebar-heading"><b>Rift Map v2</b> </div>
+      <div class="list-group list-group-flush">
+        <a href="https://www.colossalmc.net" class="list-group-item list-group-item-action bg-light"><i class="fas fa-home"></i> Home</a>
+        <a href="#" class="list-group-item list-group-item-action bg-light"><i class="fas fa-gamepad"></i> <textarea rows="1" cols="16" onclick="this.focus();this.select()" readonly="readonly">mc.colossalmc.net</textarea></a>
+        <a href="https://discord.gg/aUQqhQk" class="list-group-item list-group-item-action bg-light"><i class="fab fa-discord"></i> Discord</a>
+        <a href="#" class="list-group-item list-group-item-action bg-light"><i class="fas fa-info-circle"></i> Info</a>
+      </div>
+    </div>
+    <!-- /#sidebar-wrapper -->
+
+    <!-- Page Content -->
+    <div id="page-content-wrapper">
+
+<iframe src="https://colossalmc.net/rift_beta" height="860" width="1920"></iframe>
+
+    <!-- /#page-content-wrapper -->
+
+  </div>
+  <!-- /#wrapper -->
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Menu Toggle Script -->
+  <script>
+    $("#menu-toggle").click(function(e) {
+      e.preventDefault();
+      $("#wrapper").toggleClass("toggled");
+    });
+  </script>
+  
+</body>
+
+</html>
